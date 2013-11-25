@@ -1,0 +1,1 @@
+I am Daenerys Stormborn, daughter of dragons, bride of dragons, mother of dragons, don't you see?
