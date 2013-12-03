@@ -15,12 +15,12 @@ class Dragon
   float jawy4 = dx; //Open: dx
 
 
-    float bjawy1 = dx + 12.5; //Open: dx + 12.5
+  float bjawy1 = dx + 12.5; //Open: dx + 12.5
   float bjawy2 = dx + 12.5; //Open: dx + 50
   float bjawy3 = dx + 12.5; //Open: dx + 37.5
   float bjawy4 = dx + 12.5; //Open: dx + 25
 
-    float r = random(0, 255);
+  float r = random(0, 255);
   float g = random(0, 255);
   float b = random(0, 255);
   float deg = random(0, 360);

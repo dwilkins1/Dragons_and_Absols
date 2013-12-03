@@ -1,10 +1,12 @@
 Dragon D1;
 Absol A1;
+Timer T1;
 
 boolean cshift = false;
 boolean fireball = false;
+boolean random = false;
 PImage img;
-int number = 10;
+int number = 20;
 
 Absol[] absol = new Absol[number];
 
@@ -13,6 +15,7 @@ void setup() {
   img = loadImage("Loreal.png");
   D1 = new Dragon();
   A1 = new Absol();
+  T1 = new Timer();
   size(img.width, img.height);
 
   for (int i = 0; i < number; i++)
@@ -44,7 +47,11 @@ void draw()
   D1.dragonbounce();
 
   D1.dragonmove();
-
+  if (random == true)
+  {
+  T1.action(D1);
+  }
+  
   for (int i = 0; i < number; i++)
   {
     absol[i].show();
@@ -70,8 +77,17 @@ void keyPressed()
     {
       fireball = !fireball;
     }
+    if (keyCode == ALT);
+    {
+     random = !random; 
+    }
   }
 }
 
-//Dragon is now camouflaged. Very mysterious. Invisible, like. Indeed.
+void mousePressed()
+{
+ number++; 
+}
 
+//Dragon is now camouflaged. Very mysterious. Invisible, like. Indeed.
+//Press alt for movement
