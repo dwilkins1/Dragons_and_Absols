@@ -6,9 +6,9 @@ boolean cshift = false;
 boolean fireball = false;
 boolean random = false;
 PImage img;
-int number = 20;
+int number = 0;
 
-Absol[] absol = new Absol[number];
+Absol[] absol = new Absol[100];
 
 void setup() {
   frameRate(30);
@@ -18,7 +18,7 @@ void setup() {
   T1 = new Timer();
   size(img.width, img.height);
 
-  for (int i = 0; i < number; i++)
+  for (int i = 0; i < 100; i++)
   {
     absol[i] = new Absol();
   }
@@ -88,6 +88,5 @@ void mousePressed()
 {
  number++; 
 }
-
 //Dragon is now camouflaged. Very mysterious. Invisible, like. Indeed.
 //Press alt for movement
